@@ -9,12 +9,13 @@ import { HotelsProvider } from './context/HotelsProvider.jsx'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-    <HotelsProvider>
-       <App />
-    </HotelsProvider>
+      <HotelsProvider>
+             <App />
+      </HotelsProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
