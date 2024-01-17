@@ -1,5 +1,5 @@
-import {MdHdrPlus, MdLocationOn} from 'react-icons/md'
-import {HiCalendar, HiMinus, HiPlus, HiSearch} from 'react-icons/hi'
+import { MdLocationOn} from 'react-icons/md'
+import {HiCalendar ,HiSearch} from 'react-icons/hi'
 import { useState } from 'react'
 import { format } from 'date-fns'
 import 'react-date-range/dist/styles.css'; // main style file

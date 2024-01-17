@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function LocationItems({location}) {
   return (
     <div  className='locationItem'>
-        <img src={location.picture_url.url} alt={location.name} />
+       <Link to={`/hotels/${location.id}?lat=${location.latitude}&lng=${location.longitude}`}>
+       <img src={location.picture_url.url} alt={location.name} />
         <div className="locationItemDesc">
             <p className='location'>
                 {location.smart_location}
@@ -16,6 +18,7 @@ function LocationItems({location}) {
             <span>Night</span>
             </p>
         </div>
+       </Link>
     </div>
   )
 }

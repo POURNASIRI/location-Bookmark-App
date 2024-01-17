@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import useHotels from '../../context/HotelsProvider'
 
 function Hotels() {
@@ -18,7 +18,7 @@ function Hotels() {
             {
                 locationData.map(item=>(
                     <Link
-                    to={`/hotels/${item.id}?lat=${item.latitude}&lon=${item.longitude}`} 
+                    to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`} 
                     key={item.id}>
                         <div className={`searchItem ${singleHotel.id=== item.id ? "current-hotel":""}`}>
                             <img src={item.picture_url.url} alt={item.name} />
