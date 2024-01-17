@@ -7,21 +7,24 @@ function SingleBookmark() {
 
   const {id} = useParams()
   const{singleBookmark,getSingleBookmark,loading} = UseBookmarks()
+  const{cityName,country,countryCode,latitude,longitude} = singleBookmark
+  const navigate = useNavigate()
+
+
+
 
     useEffect(()=>{
         getSingleBookmark(id)
     },[id])
 
-    const navigate = useNavigate()
-    console.log(loading)
+    const handleback = ()=>{
+      navigate("/bookmarks")
+    }
+    
 
     if(loading ||!singleBookmark ) return <h2>Loading...</h2>
       
 
-    const handleback = ()=>{
-      navigate("/bookmarks")
-    }
-    const{cityName,country,countryCode,latitude,longitude} = singleBookmark
   return (
     <div>
         <button
@@ -33,7 +36,6 @@ function SingleBookmark() {
           <li className='bookmarkItem'>countryCode: {countryCode}</li>
           <li className='bookmarkItem'>Latitude: {latitude}</li>
           <li className='bookmarkItem'>Longitude: {longitude}</li>
-        
         </ul>
     </div>
   )

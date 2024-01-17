@@ -5,7 +5,7 @@ export function useUrlLocation(){
 
     const[searchParams,setSearchParams] = useSearchParams()
     const latitude =searchParams.get("lat") 
-    const longitude =searchParams.get("lon") 
+    const longitude =searchParams.get("lng") 
 
     return[latitude,longitude]
 }

@@ -53,8 +53,17 @@ export function BookmarksProvider({children}){
             }
         }
 
+        const deleteBookmark = async(id)=>{
+            try {
+                await axios.delete(`http://localhost:5000/bookmarks/${id}`)
+                dispatch({type:"Delete/bookmark", payload:id})
+            } catch (error) {
+                
+            }
+        }
+
     return(
-        <BookmarksContext.Provider value={{bookmarks,loading,getSingleBookmark,singleBookmark,createNewBookmar}}>
+        <BookmarksContext.Provider value={{bookmarks,loading,getSingleBookmark,singleBookmark,createNewBookmar,deleteBookmark}}>
             {children}
         </BookmarksContext.Provider>
     )

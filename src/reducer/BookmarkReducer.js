@@ -23,6 +23,10 @@ export function BookmarksReducer(state,action){
             bookmarks:[...state.bookmarks,action.payload],
             singleBookmark:action.payload
         }
+        case"Delete/bookmark":return{
+            ...state,loading:false,
+            bookmarks:state.bookmarks.filter(item=>item.id !== action.payload)
+        }
         default:{
             throw new Error("Unknown Action")
         }

@@ -6,7 +6,12 @@ import { UseBookmarks } from '../../context/BookmarksProvider'
 function Bookmarks() {
 
  
-    const{bookmarks,loading,singleBookmark} = UseBookmarks()
+    const{bookmarks,loading,singleBookmark,deleteBookmark} = UseBookmarks()
+
+    const handleDelete = (e,id)=>{
+      e.preventDefault()
+      deleteBookmark(id)
+    }
     
    if(loading) return <h2>Loading...</h2>
   return (
@@ -26,6 +31,7 @@ function Bookmarks() {
                             &nbsp;<strong>{bookmark.cityName}</strong>
                             &nbsp;<span>{bookmark.country}</span>
                         <span
+                        onClick={(e)=>handleDelete(e,bookmark.id)}
                         className='trash'>
                             <HiTrash/>
                         </span>

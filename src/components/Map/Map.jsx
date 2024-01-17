@@ -63,7 +63,7 @@ export default Map
 function DetectedClick(){
   const navigate = useNavigate()
     useMapEvent({
-      click:e=> navigate(`/bookmarks/add?lat=${e.latlng.lat}&lon=${e.latlng.lng}`)
+      click:e=> navigate(`/bookmarks/add?lat=${e.latlng.lat}&lng=${e.latlng.lng}`)
     })
     return null;
 }

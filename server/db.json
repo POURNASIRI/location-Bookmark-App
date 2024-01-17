@@ -1325,67 +1325,22 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Hombleux",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "49.761308205624985",
-      "longitude": "2.96630859375",
-      "host_location": "Hombleux France",
+      "cityName": "Bir Ali Ben Khalifa",
+      "country": "Tunisia",
+      "countryCode": "TN",
+      "latitude": "34.784483415461374",
+      "longitude": "10.107421875000002",
+      "host_location": "Bir Ali Ben Khalifa Tunisia",
+      "id": 1
+    },
+    {
+      "cityName": "Kaya",
+      "country": "Chad",
+      "countryCode": "TD",
+      "latitude": "13.550882745258527",
+      "longitude": "14.474487304687502",
+      "host_location": "Kaya Chad",
       "id": 2
-    },
-    {
-      "cityName": "Erlenbach",
-      "country": "Germany",
-      "countryCode": "DE",
-      "latitude": "49.1008472617129",
-      "longitude": "7.902680741190748",
-      "host_location": "Erlenbach Germany",
-      "id": 3
-    },
-    {
-      "cityName": "Darab",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "28.7965462417692",
-      "longitude": "54.33840560449579",
-      "host_location": "Darab Iran (Islamic Republic of)",
-      "id": 4
-    },
-    {
-      "cityName": "Essen",
-      "country": "Germany",
-      "countryCode": "DE",
-      "latitude": "51.50874245880335",
-      "longitude": "6.978950960090346",
-      "host_location": "Essen Germany",
-      "id": 5
-    },
-    {
-      "cityName": "Chisinau",
-      "country": "Moldova (the Republic of)",
-      "countryCode": "MD",
-      "latitude": "46.95776134668866",
-      "longitude": "28.88573336314008",
-      "host_location": "Chisinau Moldova (the Republic of)",
-      "id": 6
-    },
-    {
-      "cityName": "Spigno Saturnia",
-      "country": "Italy",
-      "countryCode": "IT",
-      "latitude": "41.3108238809182",
-      "longitude": "13.705525225903626",
-      "host_location": "Spigno Saturnia Italy",
-      "id": 7
-    },
-    {
-      "cityName": "Tatarszentgyorgy",
-      "country": "Hungary",
-      "countryCode": "HU",
-      "latitude": "47.040182144806664",
-      "longitude": "19.3881188817771",
-      "host_location": "Tatarszentgyorgy Hungary",
-      "id": 8
     }
   ]
 }
