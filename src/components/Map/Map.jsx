@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvent } from 'react-leaflet'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import useHotels from '../../context/HotelsProvider'
 
 function Map({markerLocation}) {
   
@@ -9,10 +8,10 @@ function Map({markerLocation}) {
 
     const[searchParams,setSearchParams] = useSearchParams()
     const latitude = searchParams.get("lat")
-    const longitude = searchParams.get("lon")
+    const longitude = searchParams.get("lng")
     const[mapCenter,setMapCenter] = useState([50,5])
 
-      
+     
    
 
     useEffect(()=>{

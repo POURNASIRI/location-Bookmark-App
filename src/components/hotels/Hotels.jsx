@@ -5,7 +5,7 @@ import useHotels from '../../context/HotelsProvider'
 function Hotels() {
 
 
-            const {locationData,loading} = useHotels()
+            const {locationData,loading,singleHotel} = useHotels()
   
       
      
@@ -20,7 +20,7 @@ function Hotels() {
                     <Link
                     to={`/hotels/${item.id}?lat=${item.latitude}&lon=${item.longitude}`} 
                     key={item.id}>
-                        <div className={`searchItem`}>
+                        <div className={`searchItem ${singleHotel.id=== item.id ? "current-hotel":""}`}>
                             <img src={item.picture_url.url} alt={item.name} />
                             <div className="searchItemDesc">
                                 <p className="location">{item.smart_location}</p>
@@ -39,6 +39,5 @@ function Hotels() {
 }
 
 export default Hotels
-
 
 

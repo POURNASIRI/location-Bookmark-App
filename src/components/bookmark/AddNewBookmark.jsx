@@ -3,6 +3,7 @@ import { useUrlLocation } from '../../hooks/useUrlLocation'
 import axios from 'axios'
 import ReactCountryFlag from 'react-country-flag'
 import { useNavigate } from 'react-router-dom'
+import { UseBookmarks } from '../../context/BookmarksProvider'
 
 
 const BASE_GEO_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client"
@@ -32,7 +33,22 @@ function AddNewBookmark() {
 
       },[latitude,longitude])
 
+      const{createNewBookmar} = UseBookmarks()
 
+      const handleSubmit = async (e)=>{
+        e.preventDefault()
+          if(!cityName || !country) return;
+          const newBookmar = {
+            cityName,
+            country,
+            countryCode,
+            latitude,
+            longitude,
+            host_location: cityName + " "+ country
+          }
+          await createNewBookmar(newBookmar)
+          navigate("/bookmarks")
+       }
 
      
       
@@ -41,7 +57,7 @@ function AddNewBookmark() {
     <div>
     <h2>Bookmark New Location</h2>
     <form
-    className='form' >
+    className='form'onSubmit={handleSubmit} >
         <div className="formControl">
             <label htmlFor='cityName'>cityName</label>
             <input

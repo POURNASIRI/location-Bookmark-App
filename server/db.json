@@ -1352,39 +1352,39 @@
       "id": 4
     },
     {
-      "cityName": "Afif",
-      "country": "Saudi Arabia",
-      "countryCode": "SA",
-      "latitude": "24.076559120295407",
-      "longitude": "42.832743203219955",
-      "host_location": "Afif Saudi Arabia",
+      "cityName": "Essen",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "51.50874245880335",
+      "longitude": "6.978950960090346",
+      "host_location": "Essen Germany",
       "id": 5
     },
     {
-      "cityName": "Terce",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "46.50406399740093",
-      "longitude": "0.5548963396111662",
-      "host_location": "Terce France",
+      "cityName": "Chisinau",
+      "country": "Moldova (the Republic of)",
+      "countryCode": "MD",
+      "latitude": "46.95776134668866",
+      "longitude": "28.88573336314008",
+      "host_location": "Chisinau Moldova (the Republic of)",
       "id": 6
     },
     {
-      "cityName": "Viggiu",
+      "cityName": "Spigno Saturnia",
       "country": "Italy",
       "countryCode": "IT",
-      "latitude": "45.865150166790585",
-      "longitude": "8.91465104799516",
-      "host_location": "Viggiu Italy",
+      "latitude": "41.3108238809182",
+      "longitude": "13.705525225903626",
+      "host_location": "Spigno Saturnia Italy",
       "id": 7
     },
     {
-      "cityName": "Trzcinsko Zdroj",
-      "country": "Poland",
-      "countryCode": "PL",
-      "latitude": "52.8873632373409",
-      "longitude": "14.590484507897942",
-      "host_location": "Trzcinsko Zdroj Poland",
+      "cityName": "Tatarszentgyorgy",
+      "country": "Hungary",
+      "countryCode": "HU",
+      "latitude": "47.040182144806664",
+      "longitude": "19.3881188817771",
+      "host_location": "Tatarszentgyorgy Hungary",
       "id": 8
     }
   ]
