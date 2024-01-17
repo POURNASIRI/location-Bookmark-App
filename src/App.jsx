@@ -1,7 +1,7 @@
 import './App.css'
 import AppLayout from './components/Layout/AppLayout'
 import LocationList from './components/LocationList/LocationList'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 import {Route,Routes} from 'react-router-dom'
 import Hotels from './components/hotels/Hotels'
 import SingleHotel from './components/hotels/SingleHotel'
