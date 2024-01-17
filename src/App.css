@@ -115,11 +115,13 @@
   border-radius: 1rem;
 }
 .homeBtn{
-  padding: 5px 10px;
+  width: 40px;
+  height: 40px;
   background-color: var(--primary-700);
   color: #fff;
   border-radius: 5px;
   text-transform: capitalize;
+  border-radius: 50%;
 }
 
 /*  location list */
@@ -390,3 +392,53 @@ a.active {
   width: 1.1rem;
   height: 1.1rem;
 }
+
+
+
+/* navbar */
+
+.side-navbar-container{
+  display: flex;
+}
+.side-navbar-container main{
+  width: 100%;
+  padding: 1rem;
+}
+.side-navbar{
+  background-color: var(--primary-700);
+  height: 100vh;
+  width: 0px;
+  transition: all .4s ease-in;
+  position: sticky;
+  top: 0;
+}
+.side-navbar.activeSlide{
+  width: 400px;
+}
+.side-navbar__topSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+.menuItem{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #fff;
+}
+.menuLinks{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding:10px 0 ;
+}
+.menuLinks:hover{
+ background-color: var(--rose-500);
+ border-radius: 10px;
+ padding: 10px;
+}
+  .menuIcon{
+    cursor: pointer;
+  }

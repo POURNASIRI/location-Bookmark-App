@@ -9,12 +9,14 @@ import BookmarkLayout from './components/Layout/BookmarkLayout'
 import Bookmarks from './components/bookmark/Bookmarks'
 import SingleBookmark from './components/bookmark/SingleBookmark'
 import AddNewBookmark from './components/bookmark/AddNewBookmark'
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
 
 
   return (
-    <div>
+    <>
+      <Sidebar>
         <Navbar/>
         <Routes>
           <Route path='/' element={<LocationList/>}/>
@@ -28,7 +30,8 @@ function App() {
             <Route  path='add' element={<AddNewBookmark/>}/>
           </Route>
         </Routes>
-    </div>
+      </Sidebar>
+    </>
   )
 }
 

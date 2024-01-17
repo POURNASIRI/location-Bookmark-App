@@ -7,6 +7,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range'; //date fns
 import { Link, createSearchParams, useNavigate, useSearchParams } from 'react-router-dom'
 import GuestOptions from './GuesOptions';
+import { useSidebar } from '../../context/SidebarProvider';
 
 
 
@@ -17,6 +18,7 @@ function Headers() {
         const[destination,setDestination] = useState(searchParams.get("destination") || "")
         const[openOptions,setOpenOptions] = useState(false)
         const[openDate,setopenDate] = useState(false)
+        const{showSidebar,setShowSidebar} = useSidebar()
     
         // default options
         const[options,setOptions] = useState({
@@ -72,13 +74,19 @@ function Headers() {
             
         }
        
-        
   return (
     <div className='header'>
-        <Link
-        to="/" 
-        className='homeBtn'>HomePage</Link>
         <div className="headerSearch">
+            {
+                !showSidebar && 
+                <button
+                className='homeBtn'
+               onClick={()=>setShowSidebar(!showSidebar)}
+               >
+                   Menu
+               </button>
+            }
+       
             {/* search location div */}
             <div className="headerSearchItem">
                 <MdLocationOn className='headerIcon locationIcon'/>

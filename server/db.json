@@ -1341,6 +1341,15 @@
       "longitude": "14.474487304687502",
       "host_location": "Kaya Chad",
       "id": 2
+    },
+    {
+      "cityName": "Haltern am See",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "51.704906406014544",
+      "longitude": "7.067736684418723",
+      "host_location": "Haltern am See Germany",
+      "id": 3
     }
   ]
 }
