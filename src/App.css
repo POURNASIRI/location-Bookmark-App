@@ -411,6 +411,7 @@ a.active {
   transition: all .4s ease-in;
   position: sticky;
   top: 0;
+  overflow: hidden;
 }
 .side-navbar.activeSlide{
   width: 400px;
