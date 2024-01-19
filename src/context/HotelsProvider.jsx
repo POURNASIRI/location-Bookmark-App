@@ -14,7 +14,7 @@ export function HotelsProvider({children}) {
         const room = JSON.parse(searchParams.get("options"))?.room
         const[singleLoading,setSingleLoading] = useState(false)
 
-        const{locationData,loading} = useFetch("http://localhost:5000/hotels",
+        const{locationData,loading} = useFetch("https://json-server-s6rb.onrender.com/hotels",
         `q=${destination || ""}&accommodates_gte=${room || 1}`)
 
 
@@ -24,7 +24,7 @@ export function HotelsProvider({children}) {
             if(id === singleHotel.id) return;
                 setSingleLoading(true)
             try {
-                const{data} = await axios.get(`http://localhost:5000/hotels/${id}`)
+                const{data} = await axios.get(`https://json-server-s6rb.onrender.com/hotels/${id}`)
                 setSingleHotel(data)
                 setSingleLoading(false)
             } catch (error) {

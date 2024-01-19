@@ -3,7 +3,7 @@ import {useFetch} from '../../hooks/useFetch'
 import LocationItems from './LocationItems'
 
 function LocationList() {
-        const {locationData,loading} = useFetch("http://localhost:5000/hotels")
+        const {locationData,loading} = useFetch("https://json-server-s6rb.onrender.com/hotels")
 
         if(loading){
             return(
